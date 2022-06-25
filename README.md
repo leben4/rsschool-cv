@@ -1,1 +1,1 @@
-# rsschool-cv
+https://leben4.github.io/rsschool-cv/cv
