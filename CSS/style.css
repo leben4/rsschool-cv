@@ -1,7 +1,4 @@
 /* Testing */
-body {
-    font-family: 'Barlow', sans-serif;
-}
 
 * {
     box-sizing: border-box;
@@ -12,8 +9,16 @@ body {
 }
 
 .main {
+    display: grid;
     border: 5px solid rebeccapurple;
+    grid-template-areas:
+        "profile profile"
+        "contacts summary"
+        "educations skills"
+        "strengths courses"
+        "languages languages";
 }
+
 
 .footer {
     border: 5px solid red;
@@ -26,7 +31,12 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ee7201;
+    background-color: #035437;
 }
 
 .container {
@@ -50,4 +60,54 @@ html {
     line-height: 50px;
     transition: .3s;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.summary {
+    grid-area: summary;
+}
+
+.education {
+    grid-area: education;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.strengths {
+    grid-area: strengths;
+}
+
+.courses {
+    grid-area: courses;
+}
+
+.languages {
+    grid-area: languages;
+}
+
+.profile-photo {
+    height: 150px;
+    border-radius: 20%;
+}
+
+.section {
+    border: 5px solid #d9e8;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(188, 219, 51);
 }
