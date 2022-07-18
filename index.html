@@ -5,59 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="icon" href="assets/img/favicon.ico" <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,
-            wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,
-            400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icons/favicon.ico">
     <title>Slava Bodrov CV</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#strengths" class="nav-link">Strengths</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item"><a href="#strengths" class="nav-link">Strengths</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
     <main class="main">
+        <div class="container-leftside" id="profile">
+            <section class="section profile-section">
+                <div class="picture-bar">
+                    <img class="photo" src="assets/img/photo.jpg" alt="my photo" width="200">
+                </div>
+                <h1 class="name">Slava Bodrov</h1>
+                <h3 class="profession">Process engineer</h3>
+            </section>
+            <div class="leftside-bar">
+                <section class="section-contacts" id="contacts">
+                    <h2 class="section-title section-title-left">Contacts</h2>
+                    <ul class="contacts-ul">
+                        <li class="contacts-li"><b>Location: </b><a
+                                href="https://yandex.ru/maps/geo/novosibirsk/53118058/?ll=82.956043%2C55.002021&z=10">Novosibirsk,Russia</a>
+                        </li>
+                        <li class="contacts-li"><b>E-mail: </b><a href="mailto:leben@eml.ru">leben@eml.ru</a></li>
+                        <li class="contacts-li"><b>GitHub: </b><a href="https://github.com/leben4">leben4</a></li>
+                        <li class="contacts-li"><b>Telegram: </b><a href="https://t.me/slavabo">@leben4</a></li>
+                        <li class="contacts-li"><b>Discord: </b><a href="https://discord.com/">leben4#2899</a></li>
+                    </ul>
+                </section>
+                <section class="section-language" id="language">
+                    <h2 class="section-title section-title-left">Language</h2>
+                    <ul class="lang-ul">
+                        <li class="lang-li">English - A2</li>
+                        <li class="lang-li">Russian - native</li>
+                    </ul>
+                </section>
+                <section class="section-hobbies" id="hobbies">
+                    <h2 class="section-title section-title-left">Hobbies</h2>
+                    <div class="hobbies-bar">
+                        <div class="hobbies-left">
+                            <p>Music</p>
+                            <p>Reading</p>
+                        </div>
+                        <div class="hobbies-right">
+                            <p>Guitar/bass player</p>
+                            <p>Cycling</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
         <div class="container main-container">
-            <section class="section profile" id="profile">
-                <img src="assets/img/photo-profile.jpg" alt="my-photo" class="profile-photo">
-                <h1 class="section-title">Slava Bodrov</h1>
-                <h2 class="section-title">Process engineer</h2>
-            </section>
-            <section class="section contacts" id="contacts">
-                <h3 class="section-title">Contacts</h3>
-                <ul>
-                    <li>jnsdkjnsd</li>
-                    <li>sjnksdjnfjkdsf</li>
-                    <li>sdfbksjdbfds</li>
-                    <li>kjsdkjdf</li>
-                </ul>
-            </section>
-            <section class="section summary" id="summary">
-                <h3 class="section-title">Summary</h3>
-            </section>
-            <section class="section education" id="education">
-                <h3 class="section-title">Education</h3>
-            </section>
-            <section class="section skills" id="skills">
-                <h3 class="section-title">Skills</h3>
-            </section>
-            <section class="section strengths" id="strengths">
-                <h3 class="section-title">Key strengths</h3>
-            </section>
-            <section class="section courses" id="courses">
-                <h3 class="section-title">Courses</h3>
-            </section>
-            <section class="section languages" id="languages">
-                <h3 class="section-title">Languages</h3>
+            <section class="section" id="summary">
+                <h2 class="section-title title-main">Summary</h2>
+                <p>
+                    Hi! My name is Slava. I am a process engineer at the Novosibirsk Scientific Institute.<br>
+                    Since 2022, I started studying html and css in a course at Rolling Scopes School.<br>
+                    It turned out to be very exciting!<br>
+                    Now it's a hobby for me, but I hope that over time, it will grow into something more!
+                </p>
             </section>
         </div>
     </main>
